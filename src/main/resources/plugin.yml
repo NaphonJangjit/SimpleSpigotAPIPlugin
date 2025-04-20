@@ -1,0 +1,4 @@
+name: NaphonAPI
+version: '1.0-SNAPSHOT'
+main: naphon.naphonAPI.NaphonAPI
+api-version: '1.21'
