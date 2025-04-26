@@ -1,6 +1,7 @@
 package naphon.naphonAPI;
 
 import org.bukkit.ChatColor;
+import org.bukkit.plugin.Plugin;
 
 public class Utils {
 
@@ -8,7 +9,15 @@ public class Utils {
         return ChatColor.translateAlternateColorCodes('&', s);
     }
 
-    public static String pluginMessage(String msg){
+    public static String serverMessage(String msg){
+        return format("&7[&bServer&7] &r" + msg);
+    }
+
+    public static String pluginMessage(Plugin plugin, String msg){
+        return format("&7[&a" + plugin.getName() + "&7] &r" + msg);
+    }
+
+    public static String apiMessage(String msg){
         return format("&7[&eAPI&7] &r" + msg);
     }
 

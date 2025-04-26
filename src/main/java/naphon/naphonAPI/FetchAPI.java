@@ -10,7 +10,7 @@ public class FetchAPI {
 
     public static void registerProvider(String name, FetchProvider provider){
         providers.put(name, provider);
-        Bukkit.getConsoleSender().sendMessage(Utils.pluginMessage("&aProvider &7" + name + " &aregistered!"));
+        Bukkit.getConsoleSender().sendMessage(Utils.apiMessage("&aProvider &7" + name + " &aregistered!"));
     }
 
     public static Object fetch(String name, Map<String, Object> params){

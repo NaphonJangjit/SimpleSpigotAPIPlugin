@@ -7,11 +7,11 @@ public final class NaphonAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage(Utils.pluginMessage("&aPlugin " + getName() + " enabled!"));
+        Bukkit.getConsoleSender().sendMessage(Utils.apiMessage("&aPlugin " + getName() + " enabled!"));
     }
 
     @Override
     public void onDisable() {
-        Bukkit.getConsoleSender().sendMessage(Utils.pluginMessage("&cPlugin " + getName() + " disabled!"));
+        Bukkit.getConsoleSender().sendMessage(Utils.apiMessage("&cPlugin " + getName() + " disabled!"));
     }
 }
